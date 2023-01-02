@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    overflow-x: hidden;
+}
+.banner{
+    background-image: url(/netflix/netflix-images/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 500px;
+
+}
+
+.banner_contents{
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+.banner_title{
+    font-size: 3rem;
+    font-weight:800;
+    padding-bottom: 0.3rem;
+}
+
+.banner_description{
+    width: 45rem;
+    line-height: 1.3rem;
+    padding-top: 1rem;
+    height: 180px;
+    max-width: 360px;
+
+}
+
+.banner_button{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.562)
+
+}
+
+.banner_button:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.2sec;
+}
+
+.banner--fadebottom{
+    margin-top:145px ;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg,transparent,rgba(34,34,34,0.5));
+}
+.row_poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 300px;
+    margin-right: 10px;
+    transition: transform 450ms;
+    border-radius:0.5rem;
+
+}
+
+.row_posters{
+    
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    
+
+}
+
+.row_poster:hover{
+    transform: scale(1.1);
+}
+
+.row_posters::webkit-scrollbar{
+    display:none;
+    
+}
+h2{
+    color: white;
+    font-weight: 800;
+}
+
+.nav_logo{
+    width:80px;
+    object-fit: contain;
+}
+.nav_avatar{
+    width:30px;
+    object-fit: contain;
+}
+
+.nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5sec;
+}
+
+.nav_black{
+    background-color: rgba(0, 0, 0, 0.6);
+
+
+}
+/* .main{
+    color: rgba(244, 33, 0, 0.555);
+    height:400px;
+    background-image: url(/netflix/netflix-images/banner.jpg);
+} */
